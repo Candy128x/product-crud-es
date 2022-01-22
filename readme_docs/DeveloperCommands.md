@@ -39,6 +39,7 @@
 - => pip3 install -r requirements.txt
 
 - => pip install Django==3.2.11
+- => pip install djangorestframework
 - => pip3 install psycopg2
 - => pip3 install psycopg2-binary
 - => pip3 install python-decouple
