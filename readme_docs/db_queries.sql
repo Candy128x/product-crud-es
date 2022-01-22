@@ -1,0 +1,111 @@
+-- Product App - DB Queries
+
+
+--CREATE DATABASE product_db_v2b;
+
+--SHOW CREATE TABLE countries;
+--SELECT generate_create_table_statement('countries');
+
+
+SELECT *
+FROM information_schema.columns
+WHERE table_schema = 'YOURSCHEMA' AND table_name = 'countries'
+ORDER BY ordinal_position;
+
+
+
+-- Select from Table with Limit 20
+SELECT * FROM customer_infos ORDER BY id LIMIT 20;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
