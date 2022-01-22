@@ -14,7 +14,7 @@
 <kbd><img src="/readme_docs/imgs/screenshot_from_2022-01-22_23-04-14.png"></img></kbd>
 
 ## DRF Panel:
-<kbd><img src="/readme_docs/imgs/screenshot_from_2022-01-23_00-17-34"></img></kbd>
+<kbd><img src="/readme_docs/imgs/screenshot_from_2022-01-23_00-17-34.png"></img></kbd>
 
 
 ---
