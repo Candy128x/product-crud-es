@@ -3,8 +3,8 @@
 
 --CREATE DATABASE product_db_v2b;
 
---SHOW CREATE TABLE countries;
---SELECT generate_create_table_statement('countries');
+--SHOW CREATE TABLE product_details;
+--SELECT generate_create_table_statement('product_details');
 
 
 SELECT *
@@ -15,7 +15,7 @@ ORDER BY ordinal_position;
 
 
 -- Select from Table with Limit 20
-SELECT * FROM customer_infos ORDER BY id LIMIT 20;
+SELECT * FROM product_details ORDER BY id LIMIT 20;
 
 
 
