@@ -1,5 +1,8 @@
 # product-crud-es
- Django CRUD (Create, Read, Update, Delete) Operation, DRF, Elastic Search with SQLite DB
+
+Descriptions:
+- Product CRUD (Create, Read, Update, Delete) Operation
+- Technology used: Python, django, DRF, Elastic Search, SQLite DB
 
 
 ---
@@ -24,8 +27,8 @@
 **See ChangeLog History [here](readme_docs/CHANGELOG.md)**
 
 ---
-## PostMan Collection:
-- [link](https://www.getpostman.com/collections/e70b95bb50e5002c88db)
+## PostMan:
+- Collection [link](https://www.getpostman.com/collections/e70b95bb50e5002c88db)
 - [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/e70b95bb50e5002c88db)
 
 
