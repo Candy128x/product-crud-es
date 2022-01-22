@@ -12,7 +12,7 @@
 
 
 ---
-### v1.1.1 | 2022-01-22
+### v0.0.1 | 2022-01-22
 ## Structure setup | Added | Done
 - setup codebase structure
 
