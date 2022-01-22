@@ -1,7 +1,7 @@
 # product-crud-es
 
 Descriptions:
-- Product CRUD (Create, Read, Update, Delete) Operation
+- Product CRUD (Create, Read, Update, Delete) Operations
 - Technology used: Python, django, DRF, Elastic Search, SQLite DB
 
 

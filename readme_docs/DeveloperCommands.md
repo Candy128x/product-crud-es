@@ -66,16 +66,16 @@
 > - $ python3 manage.py createsuperuser
 
 > - To dump data:
-> - $ python3 manage.py dumpdata --indent 4 > readme_docs/dumpdata/db_dump.json
+> - $ python3 manage.py dumpdata --indent 4 > ../readme_docs/dumpdata/db_dump.json
 
 > - To load data:
-> - $ python manage.py loaddata readme_docs/dumpdata/db_dump.json
+> - $ python manage.py loaddata ../readme_docs/dumpdata/db_dump.json
 
 > - To open Interactive Console / Terminal
 > - $ python3 manage.py shell
 
 > - set URL globally
-> $ngrok http 8000
+> - $ngrok http 8000
 
 > - collect static
 > - $ python3 manage.py collectstatic

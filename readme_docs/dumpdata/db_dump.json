@@ -216,6 +216,42 @@
     }
 },
 {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add product details",
+        "content_type": 7,
+        "codename": "add_productdetails"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change product details",
+        "content_type": 7,
+        "codename": "change_productdetails"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete product details",
+        "content_type": 7,
+        "codename": "delete_productdetails"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view product details",
+        "content_type": 7,
+        "codename": "view_productdetails"
+    }
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 1,
     "fields": {
@@ -261,6 +297,77 @@
     "fields": {
         "app_label": "sessions",
         "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "products",
+        "model": "productdetails"
+    }
+},
+{
+    "model": "products.productdetails",
+    "pk": 1,
+    "fields": {
+        "name": "apple ipad - model A1",
+        "price": 40000,
+        "quantity": 2
+    }
+},
+{
+    "model": "products.productdetails",
+    "pk": 2,
+    "fields": {
+        "name": "apple ipad - model B2",
+        "price": 2000,
+        "quantity": 5
+    }
+},
+{
+    "model": "products.productdetails",
+    "pk": 3,
+    "fields": {
+        "name": "apple ipad - model C1",
+        "price": 3000,
+        "quantity": 20
+    }
+},
+{
+    "model": "products.productdetails",
+    "pk": 4,
+    "fields": {
+        "name": "apple ipad - model D1",
+        "price": 40000,
+        "quantity": 5
+    }
+},
+{
+    "model": "products.productdetails",
+    "pk": 5,
+    "fields": {
+        "name": "apple ipad - model E1",
+        "price": 50000,
+        "quantity": 5
+    }
+},
+{
+    "model": "products.productdetails",
+    "pk": 7,
+    "fields": {
+        "name": "apple ipad - model G1",
+        "price": 2000,
+        "quantity": 5
+    }
+},
+{
+    "model": "products.productdetails",
+    "pk": 8,
+    "fields": {
+        "name": "apple ipad - model J1",
+        "price": 50000,
+        "quantity": 5
     }
 }
 ]
