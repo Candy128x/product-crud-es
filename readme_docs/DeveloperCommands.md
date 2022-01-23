@@ -40,11 +40,14 @@
 
 - => pip install Django==3.2.11
 - => pip install djangorestframework
-- => pip install django-elasticsearch-dsl
-- => pip install django-elasticsearch-dsl-drf
-- => pip3 install psycopg2
-- => pip3 install psycopg2-binary
-- => pip3 install python-decouple
+- => x pip install django-elasticsearch-dsl
+- => x pip install django-elasticsearch-dsl-drf
+- => pip install elasticsearch==7.14.0
+- => pip install elasticsearch-dsl==7.4.0
+- => pip install django-elasticsearch-dsl==7.2.0
+- => x pip3 install psycopg2
+- => x pip3 install psycopg2-binary
+- => x pip3 install python-decouple
 
 
 ---
@@ -144,3 +147,15 @@ ashishs@lp7981:.../product-crud-es$
 >>> 
 >>> 
 ```
+
+> Syncing Django’s database with Elasticsearch indexes:
+> > - Create Elasticsearch indexes:
+> > - $ python3 manage.py search_index --create -f
+> 
+> > - Sync the data:
+> > - $ python3 manage.py search_index --populate -f
+> 
+> > - Populate Elasticsearch:
+> > - $ python3 manage.py search_index --rebuild
+
+
