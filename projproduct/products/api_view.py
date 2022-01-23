@@ -51,10 +51,8 @@ class ProductDetailsESSearchApiViewSet(PaginatedElasticSearchAPIView):
     document_class = ProductDetailsDocument
 
     def generate_q_expression(self, query):
-        return Q(
-                'multi_match', query=query,
-                fields=[
-                    'name',
-                    # 'price',
-                    # 'quantity'
-                ], fuzziness='auto')
+        if query == '*':
+            qry = Q('match_all')
+        else:
+            qry = Q('multi_match', query=query, fields=['name'], fuzziness='auto')
+        return qry

@@ -320,7 +320,7 @@
     "model": "products.productdetails",
     "pk": 2,
     "fields": {
-        "name": "apple ipad - model B2",
+        "name": "apple ipad - model B3",
         "price": 2000,
         "quantity": 5
     }

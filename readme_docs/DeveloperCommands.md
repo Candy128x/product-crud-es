@@ -80,7 +80,7 @@
 > - $ python3 manage.py shell
 
 > - set URL globally
-> - $ngrok http 8000
+> - $ ngrok http 8000
 
 > - collect static
 > - $ python3 manage.py collectstatic
@@ -125,6 +125,12 @@ ashishs@lp7981:.../product-crud-es$ curl -XGET http://localhost:9200
 }
 ashishs@lp7981:.../product-crud-es$ 
 ```
+
+> - ElasticSearch on local system
+> - http://localhost:9200/
+
+> - Kibana on local system
+> - http://localhost:5601/
 
 - hit ES records
 ```shell
