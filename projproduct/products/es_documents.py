@@ -11,10 +11,10 @@ from products.models import ProductDetails
 # @product_details_index.doc_type
 @registry.register_document
 class ProductDetailsDocument(Document):
-
-    # name = fields.TextField(attr='name', fields={'suggest': fields.Completion()})
-    # price = fields.IntegerField()
-    # quantity = fields.IntegerField()
+    id = fields.IntegerField(attr='id')
+    name = fields.TextField(attr='name', fields={'suggest': fields.Completion()})
+    price = fields.IntegerField()
+    quantity = fields.IntegerField()
 
     # class Meta:
     #     model = ProductDetails
@@ -31,4 +31,4 @@ class ProductDetailsDocument(Document):
 
     class Django:
         model = ProductDetails
-        fields = ['name', 'price', 'quantity']
+        # fields = ['name', 'price', 'quantity']

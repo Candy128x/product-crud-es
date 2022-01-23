@@ -90,6 +90,8 @@
 ## Elastic Search Command's
 > - start elastic-search service on system
 > - $ sudo systemctl start elasticsearch
+> - $ sudo systemctl restart elasticsearch
+> - $ sudo systemctl stop elasticsearch
 
 - command to know elastic-search is up & run
 ```shell

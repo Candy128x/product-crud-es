@@ -56,3 +56,12 @@ class ProductDetailsESSearchApiViewSet(PaginatedElasticSearchAPIView):
         else:
             qry = Q('multi_match', query=query, fields=['name'], fuzziness='auto')
         return qry
+
+
+class ProductDetailsByIdESSearchApiViewSet(PaginatedElasticSearchAPIView):
+    serializer_class = ProductDetailsSerializer
+    document_class = ProductDetailsDocument
+
+    def generate_q_expression(self, query):
+        return Q('multi_match', query=query, fields=['id'])
+
