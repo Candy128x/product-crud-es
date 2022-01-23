@@ -7,9 +7,9 @@ Descriptions:
 
 ---
 ## Software Requirements
-- [Python](https://www.python.org/downloads/release/python-380/) : 3.8.0
-- [Django](https://docs.djangoproject.com/en/3.2/) : 3.2.11
-- [DRF](https://www.django-rest-framework.org/) : 3.13.1
+- [Python](https://www.python.org/downloads/release/python-380/): 3.8.0
+- [Django](https://docs.djangoproject.com/en/3.2/): 3.2.11
+- [DRF](https://www.django-rest-framework.org/): 3.13.1
 
 
 ---
