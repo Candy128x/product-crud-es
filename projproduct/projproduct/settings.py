@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_elasticsearch_dsl',
+    'django_elasticsearch_dsl_drf',
 
     # Custom App
     'products'
@@ -82,6 +84,13 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+}
+
+ELASTICSEARCH_DSL = {
+    'default': {
+        # 'hosts': 'elasticsearch:9200'
+        'hosts': 'localhost:9200'
+    },
 }
 
 

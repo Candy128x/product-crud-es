@@ -40,6 +40,8 @@
 
 - => pip install Django==3.2.11
 - => pip install djangorestframework
+- => pip install django-elasticsearch-dsl
+- => pip install django-elasticsearch-dsl-drf
 - => pip3 install psycopg2
 - => pip3 install psycopg2-binary
 - => pip3 install python-decouple
@@ -80,3 +82,65 @@
 > - collect static
 > - $ python3 manage.py collectstatic
 
+
+---
+## Elastic Search Command's
+> - start elastic-search service on system
+> - $ sudo systemctl start elasticsearch
+
+- command to know elastic-search is up & run
+```shell
+ashishs@lp7981:.../product-crud-es$ service elasticsearch status
+● elasticsearch.service - Elasticsearch
+   Loaded: loaded (/usr/lib/systemd/system/elasticsearch.service; disabled; vendor preset: enabled)
+   Active: active (running) since Sun 2022-01-23 13:00:35 IST; 11s ago
+     Docs: https://www.elastic.co
+ Main PID: 27096 (java)
+    Tasks: 113 (limit: 4915)
+   CGroup: /system.slice/elasticsearch.service
+           ├─27096 /usr/share/elasticsearch/jdk/bin/java -Xshare:auto -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=1
+           └─27385 /usr/share/elasticsearch/modules/x-pack-ml/platform/linux-x86_64/bin/controller
+ashishs@lp7981:.../product-crud-es$ 
+ashishs@lp7981:.../product-crud-es$ 
+ashishs@lp7981:.../product-crud-es$ curl -XGET http://localhost:9200
+{
+  "name" : "lp7981",
+  "cluster_name" : "elasticsearch",
+  "cluster_uuid" : "EoWui3QQTqiHPWIVC55sAw",
+  "version" : {
+    "number" : "7.14.1",
+    "build_flavor" : "default",
+    "build_type" : "deb",
+    "build_hash" : "66b55ebfa59c92c15db3f69a335d500018b3331e",
+    "build_date" : "2021-08-26T09:01:05.390870785Z",
+    "build_snapshot" : false,
+    "lucene_version" : "8.9.0",
+    "minimum_wire_compatibility_version" : "6.8.0",
+    "minimum_index_compatibility_version" : "6.0.0-beta1"
+  },
+  "tagline" : "You Know, for Search"
+}
+ashishs@lp7981:.../product-crud-es$ 
+```
+
+- hit ES records
+```shell
+(venv) ashishs@lp7981:.../projproduct$ python manage.py shell
+>>> 
+>>> from products.es_documents import ProductDetailsDocument
+>>>
+>>> records = ProductDetailsDocument.search().filter("term", name="apple")
+>>> 
+>>> for record in records:
+...     print(f'---Products Details ---name: {record.name} ---price:{record.price} ---quantity: {record.quantity}')
+... 
+---Products Details ---name: apple ipad - model J1 ---price:50000 ---quantity: 5
+---Products Details ---name: apple ipad - model G1 ---price:2000 ---quantity: 5
+---Products Details ---name: apple ipad - model E1 ---price:50000 ---quantity: 5
+---Products Details ---name: apple ipad - model D1 ---price:40000 ---quantity: 5
+---Products Details ---name: apple ipad - model C1 ---price:3000 ---quantity: 20
+---Products Details ---name: apple ipad - model B2 ---price:2000 ---quantity: 5
+---Products Details ---name: apple ipad - model A1 ---price:40000 ---quantity: 2
+>>> 
+>>> 
+```
