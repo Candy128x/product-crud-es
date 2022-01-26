@@ -28,6 +28,7 @@ Descriptions:
 
 ---
 ## PostMan:
+<kbd><img src="/readme_docs/imgs/postman_api_collection.gif"></img></kbd>
 - Collection [link](https://www.getpostman.com/collections/e70b95bb50e5002c88db)
 - [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/e70b95bb50e5002c88db)
 
