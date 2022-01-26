@@ -23,8 +23,6 @@ Descriptions:
 ---
 **See Command's Documentation [here](readme_docs/DeveloperCommands.md)**
 
----
-**See ChangeLog History [here](readme_docs/CHANGELOG.md)**
 
 ---
 ## PostMan:

@@ -9,13 +9,6 @@ from rest_framework.views import APIView
 import abc
 
 
-# -> ViewSets define the view behavior.
-# class ProductDetailsApiViewSet(viewsets.ModelViewSet):
-#     queryset = ProductDetails.objects.all()
-#     serializer_class = ProductDetailsSerializer
-
-
-# -> ViewSets define the view behavior.
 class ProductDetailsApiViewSet(viewsets.ModelViewSet):
     document = ProductDetailsDocument
     queryset = ProductDetails.objects.all()
@@ -28,17 +21,14 @@ class PaginatedElasticSearchAPIView(APIView, LimitOffsetPagination):
 
     @abc.abstractmethod
     def generate_q_expression(self, query):
-        """This method should be overridden
-        and return a Q() expression."""
+        """This method should be overridden and return a Q() expression."""
 
     def get(self, request, query):
         try:
             q = self.generate_q_expression(query)
             search = self.document_class.search().query(q).sort('id')
             response = search.execute()
-
-            print(f'Found {response.hits.total.value} hit(s) for query: "{query}"')
-
+            # print(f'Found {response.hits.total.value} hit(s) for query: "{query}"')
             results = self.paginate_queryset(response, request, view=self)
             serializer = self.serializer_class(results, many=True)
             return self.get_paginated_response(serializer.data)
