@@ -309,64 +309,46 @@
 },
 {
     "model": "products.productdetails",
-    "pk": 1,
+    "pk": 23,
     "fields": {
-        "name": "apple ipad - model A1",
+        "name": "Apple iPad 2022 - Model A1",
         "price": 40000,
+        "quantity": 5
+    }
+},
+{
+    "model": "products.productdetails",
+    "pk": 24,
+    "fields": {
+        "name": "Apple iPad 2022 - Model B1",
+        "price": 60000,
         "quantity": 2
     }
 },
 {
     "model": "products.productdetails",
-    "pk": 2,
+    "pk": 25,
     "fields": {
-        "name": "apple ipad - model B3",
-        "price": 2000,
+        "name": "Apple iPad 2022 - Model C1",
+        "price": 20000,
+        "quantity": 6
+    }
+},
+{
+    "model": "products.productdetails",
+    "pk": 26,
+    "fields": {
+        "name": "Apple iPad 2022 - Model D1",
+        "price": 20000,
         "quantity": 5
     }
 },
 {
     "model": "products.productdetails",
-    "pk": 3,
+    "pk": 27,
     "fields": {
-        "name": "apple ipad - model C1",
-        "price": 3000,
-        "quantity": 20
-    }
-},
-{
-    "model": "products.productdetails",
-    "pk": 4,
-    "fields": {
-        "name": "apple ipad - model D1",
-        "price": 40000,
-        "quantity": 5
-    }
-},
-{
-    "model": "products.productdetails",
-    "pk": 5,
-    "fields": {
-        "name": "apple ipad - model E1",
-        "price": 50000,
-        "quantity": 5
-    }
-},
-{
-    "model": "products.productdetails",
-    "pk": 7,
-    "fields": {
-        "name": "apple ipad - model G1",
-        "price": 2000,
-        "quantity": 5
-    }
-},
-{
-    "model": "products.productdetails",
-    "pk": 8,
-    "fields": {
-        "name": "apple ipad - model J1",
-        "price": 50000,
+        "name": "Apple iPad 2022 - Model E1",
+        "price": 20000,
         "quantity": 5
     }
 }

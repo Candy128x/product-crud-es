@@ -34,7 +34,7 @@ class PaginatedElasticSearchAPIView(APIView, LimitOffsetPagination):
     def get(self, request, query):
         try:
             q = self.generate_q_expression(query)
-            search = self.document_class.search().query(q)
+            search = self.document_class.search().query(q).sort('id')
             response = search.execute()
 
             print(f'Found {response.hits.total.value} hit(s) for query: "{query}"')
